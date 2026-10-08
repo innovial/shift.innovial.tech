@@ -6,13 +6,41 @@ import { Footer } from '@/components/layout/Footer'
 import { getDictionary } from '@/get-dictionary'
 
 export async function generateMetadata({ params }: { params: { lang: 'en' | 'id' } }): Promise<Metadata> {
+  const isEnglish = params.lang === 'en'
+  const title = isEnglish
+    ? 'Innovial Shift | Code Migration for Legacy Systems'
+    : 'Innovial Shift | Migrasi Codebase dan API'
+  const description = isEnglish
+    ? 'Map repository dependencies, plan framework and API migrations, and review focused code changes with your project’s existing tests and checks.'
+    : 'Petakan dependensi repository, rencanakan migrasi framework dan API, lalu tinjau perubahan kode dengan tes dan pemeriksaan proyek Anda.'
+
   return {
-    title: params.lang === 'en'
-      ? 'Innovial Shift | Codebase Migration and Refactoring'
-      : 'Innovial Shift | Migrasi dan Refactoring Codebase',
-    description: params.lang === 'en'
-      ? 'Innovial Shift helps developers map repositories, plan migrations, prepare reviewable changes, and check API contracts and tests.'
-      : 'Innovial Shift membantu developer memetakan repository, merencanakan migrasi, menyiapkan perubahan untuk ditinjau, dan memeriksa kontrak API serta tes.',
+    metadataBase: new URL('https://shift.innovial.tech'),
+    title,
+    description,
+    applicationName: 'Innovial Shift',
+    alternates: {
+      canonical: `/${params.lang}`,
+      languages: {
+        en: '/en',
+        id: '/id',
+        'x-default': '/en',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      siteName: 'Innovial Shift',
+      title,
+      description,
+      url: `/${params.lang}`,
+      locale: isEnglish ? 'en_US' : 'id_ID',
+      alternateLocale: isEnglish ? ['id_ID'] : ['en_US'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
     icons: {
       icon: '/logo/icon-color.svg',
     },
