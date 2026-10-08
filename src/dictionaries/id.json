@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "product": "Produk",
+    "workflow": "Alur kerja",
+    "approach": "Integrasi Claude",
+    "mainNavigation": "Navigasi utama",
+    "menu": "Menu",
+    "closeMenu": "Tutup",
+    "contact": "Hubungi"
+  },
+  "footer": {
+    "description": "Tool developer dari Innovial.",
+    "rights": "Hak cipta dilindungi."
+  }
+}

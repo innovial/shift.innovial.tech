@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "product": "Product",
+    "workflow": "Workflow",
+    "approach": "Claude integration",
+    "mainNavigation": "Main navigation",
+    "menu": "Menu",
+    "closeMenu": "Close",
+    "contact": "Contact"
+  },
+  "footer": {
+    "description": "Developer tools by Innovial.",
+    "rights": "All rights reserved."
+  }
+}
