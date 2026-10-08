@@ -1,15 +1,15 @@
 {
   "nav": {
-    "product": "Produk",
+    "product": "Tentang Shift",
     "workflow": "Alur kerja",
-    "approach": "Integrasi Claude",
+    "approach": "Arah teknis",
     "mainNavigation": "Navigasi utama",
     "menu": "Menu",
     "closeMenu": "Tutup",
     "contact": "Hubungi"
   },
   "footer": {
-    "description": "Tool developer dari Innovial.",
+    "description": "Perencanaan migrasi untuk tim yang memegang sistem lama.",
     "rights": "Hak cipta dilindungi."
   }
 }

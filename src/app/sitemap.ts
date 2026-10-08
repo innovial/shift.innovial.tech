@@ -3,30 +3,19 @@ import type { MetadataRoute } from 'next'
 const siteUrl = 'https://shift.innovial.tech'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
   return [
     {
       url: `${siteUrl}/en`,
-      changeFrequency: 'monthly',
-      priority: 1,
-      alternates: {
-        languages: {
-          en: `${siteUrl}/en`,
-          id: `${siteUrl}/id`,
-          'x-default': `${siteUrl}/en`,
-        },
-      },
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 1.0,
     },
     {
       url: `${siteUrl}/id`,
-      changeFrequency: 'monthly',
-      priority: 1,
-      alternates: {
-        languages: {
-          en: `${siteUrl}/en`,
-          id: `${siteUrl}/id`,
-          'x-default': `${siteUrl}/en`,
-        },
-      },
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
-  ]
+  ];
 }

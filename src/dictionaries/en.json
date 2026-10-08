@@ -1,15 +1,15 @@
 {
   "nav": {
-    "product": "Product",
+    "product": "Why Shift",
     "workflow": "Workflow",
-    "approach": "Claude integration",
+    "approach": "Technical direction",
     "mainNavigation": "Main navigation",
     "menu": "Menu",
     "closeMenu": "Close",
     "contact": "Contact"
   },
   "footer": {
-    "description": "Developer tools by Innovial.",
+    "description": "Migration planning for teams that own legacy systems.",
     "rights": "All rights reserved."
   }
 }
